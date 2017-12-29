@@ -1,0 +1,51 @@
+.portfolio-list
+
+  .portfolio-img
+    width: 290px
+    padding: 0
+    margin: 10px
+  .list-block
+    display: flex
+    align-items: flex-end
+    width: 100%
+    top: 0
+    bottom: 0
+    padding: 20px
+
+  .hover-link
+    display: none
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
+
+    li
+      width: 40px
+      height: 40px
+      border-radius: 50px
+      background: $azure
+      display: flex
+      justify-content: center
+      align-items: center
+      margin-bottom: 10px
+    a
+      color: $white
+      
+  li:hover
+    .hover-link
+      display: flex
+    .list-block
+      display: none
+
+  .extra-small-text
+    color: $turquoise
+  i
+    color: $white
+
+@media (max-width: 576px)
+  .portfolio-list
+    .list-block, .portfolio-img
+      margin: 10px

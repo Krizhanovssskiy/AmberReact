@@ -1,0 +1,136 @@
+.main-header
+  width: 100%
+  z-index: 999
+  .sign-in-block
+    max-height: 50px
+    height: 100%
+    padding: 10px 0
+    background-color: $bleck
+    .search
+      width: 210px
+      margin-right: -20px
+      padding-right: 25px
+      padding-left: 10px
+      background: transparent
+      outline: none
+      border: 1px solid rgba(133, 147, 159, 0.5)
+    .search-text
+      color: $bluey
+      font: 400 12px/25px $Lato
+
+    .btn-search
+      outline: none
+      background: transparent
+      border: 0
+      color: $bluey
+      cursor: pointer
+    .register
+      margin-left: 35px
+    a:hover
+      color: $bluey
+
+  .logo-and-nav
+    width: 100%
+    z-index: 999
+    background: transparent
+  .navbar
+    padding: 0
+    margin: 0
+
+    .nav
+      flex-basis: 700px
+      text-align: center
+      a
+        color: $white
+      li
+        flex-basis: 14.28%
+        border-top: 10px solid transparent
+        border-bottom: 10px solid transparent
+        padding: 5px 0
+        color: $white
+        text-transform: uppercase
+        &:hover
+          height: 100%
+          color: $bleck
+        &:nth-child(1)
+          border-top-color: $yellow
+          &:before
+            background: $yellow
+        &:nth-child(2)
+          border-top-color: $orange
+          &:before
+            background: $orange
+        &:nth-child(3)
+          border-top-color: $cherry
+          &:before
+            background: $cherry
+        &:nth-child(4)
+          border-top-color: $pink
+          &:before
+            background: $pink
+        &:nth-child(5)
+          border-top-color: $violet
+          &:before
+            background: $violet
+        &:nth-child(6)
+          border-top-color: $blue
+          &:before
+            background: $blue
+        &:nth-child(7)
+          border-top-color: $azure
+          &:before
+            background: $azure
+
+
+
+
+@media (max-width: 576px)
+  .main-header
+    .sign-in-block
+      max-height: 80px
+      .login-block
+        margin-top: 15px
+    .logo-and-nav
+      .nav
+        max-width: 100px
+        li
+          border-top: 3px solid transparent
+          border-bottom: 3px solid transparent
+          padding: 0
+          margin-bottom: -3px
+
+@media (min-width: 576px)
+  .main-header
+    .sign-in-block
+      max-height: 80px
+      .login-block
+        margin-top: 15px
+    .logo-and-nav
+      .nav
+        max-width: 100px
+        li
+          border-top: 3px solid transparent
+          border-bottom: 3px solid transparent
+          padding: 0
+          margin-bottom: -3px
+
+@media (min-width: 768px)
+  .main-header
+    .sign-in-block
+      .login-block
+        margin-top: 0
+
+@media (min-width: 992px)
+  .main-header
+    .sign-in-block
+      max-height: 50px
+      .login-block
+        margin-top: 0
+    .logo-and-nav
+      .nav
+        max-width: 700px
+        li
+          border-top: 10px solid transparent
+          border-bottom: 10px solid transparent
+          padding: 0
+          margin-bottom: -10px

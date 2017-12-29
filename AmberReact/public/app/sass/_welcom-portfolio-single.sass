@@ -1,0 +1,40 @@
+.welcom-portfolio
+  position: relative
+  .title-page
+    position: absolute
+    bottom: 10px
+    left: 0
+    right: 0
+    .link-right
+      max-width: 255px
+      margin-top: 15px
+    .link-left
+      width: 390px
+      margin-top: 15px
+    span
+      margin: 0 5px
+    a
+      color: $bluey
+      &:hover
+        color: $red
+      &:hover span
+        color: $bluey
+  h3
+    color: $white
+@media (max-width: 576px)
+  .welcom-portfolio
+    position: relative
+    .title-page
+      position: relative
+      top: 15px
+      a
+        color: $bluey
+        &:hover
+          color: $red
+        &:hover span
+          color: $bluey
+    h3
+      color: $bleck
+
+
+

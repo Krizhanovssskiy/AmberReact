@@ -1,0 +1,71 @@
+.container
+  margin: 0 auto
+.extra-small-text
+  color: $bluey
+  font: 300 11px/20px $Oxygen
+
+.small-text
+  color: $white
+  font: 300 12px/24px $Oxygen
+
+.extra-medium-text
+  color: $white
+  font: 300 14px/24px $Oxygen
+
+.medium-text
+  color: $gray
+  font: 300 18px/30px $Oxygen
+
+.large-text
+  color: $white
+  font: 300 24px/30px $Oxygen
+.big-text
+  color: $white
+  font: 300 48px/1 $Oxygen
+
+.wrap-text-header
+  position: relative
+  text-align: center
+  margin: 0 auto
+  padding-bottom: 30px
+  &:before
+    content: ''
+    width: 50px
+    height: 5px
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    margin: 60px auto 0
+    background-color: $grayish
+
+h2, .h2
+  color: $turquoise
+  font: 300 60px/72px $Oxygen
+
+h3, .h3
+  color: $gray
+  font: 300 36px/1 $Oxygen
+h4
+  color: $white
+  font: 300 22px/35px $Oxygen
+
+
+@media (max-width: 576px)
+  h2, .h2
+    font: 300 25px/1 $Oxygen
+  .wrap-text-header
+    &:before
+      content: ''
+      margin: 100px auto 0
+
+@media (min-width: 576px)
+  h2, .h2
+    font: 300 30px/1 $Oxygen
+
+
+@media (min-width: 768px)
+  h2, .h2
+    font: 300 60px/72px $Oxygen
+
