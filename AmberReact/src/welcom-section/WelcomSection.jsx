@@ -25,7 +25,7 @@ export default class WelcomSection extends React.Component {
 
     render() {
         return (
-            <div>
+            <section className="welcom-section">
                 <div id="carouselExampleIndicators" className="position-static carousel slide" data-ride="carousel">
                     <ol className="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"/>
@@ -60,7 +60,7 @@ export default class WelcomSection extends React.Component {
                         <a href="#" className="button-size small-text btn btn-outline-success">purchase now</a>
                     </div>
                 </div>
-            </div>
+            </section>
 
         );
 

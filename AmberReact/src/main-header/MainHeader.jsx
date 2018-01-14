@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 export default class MainHeader extends React.Component {
     constructor () {
@@ -7,9 +8,15 @@ export default class MainHeader extends React.Component {
 
     render() {
         return (
-            <div>
+            <header className="main-header" id="scrol-top">
                 <div className="sign-in-block">
                     <div className="container d-md-flex justify-content-md-between">
+                        <form action="" className="d-flex justify-content-center">
+                            <input className="search search-text" type="search" name="btnSch" placeholder="Search"/>
+                            <button className="btn-search" type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </form>
                         <div className="login-block d-flex align-items-center justify-content-center">
                             <a href="#" className="login extra-small-text">
                                 <i className="fa fa-user-circle-o" aria-hidden="true" />
@@ -39,32 +46,32 @@ export default class MainHeader extends React.Component {
                             <div className="collapse navbar-collapse" id="navbarColor03">
                                 <ul className="nav navbar-nav ml-auto d-md-flex justify-content-sm-between">
                                     <li className="nav-item hvr-sweep-to-bottom">
-                                        <a className="nav-link small-text " href="#amber">Home</a>
+                                        <Link to='/home' className="nav-link small-text ">Home</Link>
                                     </li>
                                     <li className="nav-item hvr-sweep-to-bottom">
-                                        <a className="nav-link small-text" href="#">Typography</a>
+                                        <a href="" className="nav-link small-text">Typography</a>
                                     </li>
                                     <li className="nav-item hvr-sweep-to-bottom">
-                                        <a className="nav-link small-text" href="#">Blog</a>
+                                        <Link to='/blogGrid' className="nav-link small-text">Blog</Link>
                                     </li>
                                     <li className="nav-item hvr-sweep-to-bottom">
-                                        <a className="nav-link small-text" href="#">Pages</a>
+                                        <Link to='/blogSingle' className="nav-link small-text">Pages</Link>
                                     </li>
                                     <li className="nav-item hvr-sweep-to-bottom">
-                                        <a className="nav-link small-text" href="#">Elements</a>
+                                        <a href="" className="nav-link small-text">Elements</a>
                                     </li>
                                     <li className="nav-item hvr-sweep-to-bottom">
-                                        <a className="nav-link small-text" href="#">eCommerse</a>
+                                        <a href="" className="nav-link small-text">eCommerse</a>
                                     </li>
                                     <li className="nav-item hvr-sweep-to-bottom">
-                                        <a className="nav-link small-text" href="#">Mega menu</a>
+                                        <a href="" className="nav-link small-text">Mega menu</a>
                                     </li>
                                 </ul>
                             </div>
                         </nav>
                     </div>
                 </div>
-            </div>
+            </header>
 
         );
     }

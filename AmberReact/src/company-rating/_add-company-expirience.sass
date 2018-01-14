@@ -1,0 +1,63 @@
+.company-expirience
+  padding: 100px 0
+  background-color: $turquoise
+  h3
+    color: $white
+  .company-rating
+    margin: 50px 0 30px
+    text-align: center
+
+  li
+    position: relative
+    width: 240px
+    min-width: 240px
+    &:before
+      content: ''
+      position: absolute
+      top: 17%
+      left: 0
+      right: 0
+      display: block
+      width: 100px
+      height: 100px
+      margin: auto
+      border-radius: 50%
+  .years-development:before
+    content: ''
+    background: #000 url(./img/years-bg.png) center no-repeat
+  .last-results:before
+      content: ''
+      background: #000 url(./img/phone.png) center no-repeat
+  .budget:before
+      content: ''
+      background: #000 url(./img/phone.png) center no-repeat
+  .dots
+    position: relative
+    top: -60%
+    left: -55%
+    right: 0
+    display: flex
+    justify-content: space-between
+    height: 10px
+    width: 70px
+    margin: 0 auto
+    div
+      display: block
+      width: 10px
+      height: 10px
+      border-radius: 50%
+      background: #fff
+  .medium-text
+    color: $white
+
+@media (max-width: 576px), (min-width: 576px)
+  .company-expirience
+    li
+      margin-bottom: 20px
+    .dots
+      display: none
+
+@media (min-width: 992px)
+  .company-expirience
+    .dots
+      display: flex

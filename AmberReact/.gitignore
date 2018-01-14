@@ -29,3 +29,4 @@ yarn-error.log*
 /**/*.psd
 /**/Thumbs.db
 /**/.DS_Store
+.idea
